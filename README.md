@@ -1,8 +1,8 @@
-# React Page Installation Guide
+# FLIPKART GRID MANAGER INTERFACE
 
 ## Overview
 
-This guide will help you install and run frontend of project locally. Follow the steps below to set up your environment and start the application.
+This guide will help you install and run the interface for the manager. Follow the steps below to set up your environment and start the application.
 
 ---
 
@@ -31,20 +31,16 @@ Ensure you have the following installed on your system:
    Clone the repository to your local machine using Git:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/heyronjmilton/flipkart-grid-manager-interface.git
    ```
-
-   Replace `<repository-url>` with the actual URL of the repository.
 
 2. **Navigate to the Project Directory**
 
    Move into the project's directory:
 
    ```bash
-   cd <project-folder>
+   cd flipkart-grid-manager-interface
    ```
-
-   Replace `<project-folder>` with the directory name of your cloned project.
 
 3. **Install Dependencies**
 
@@ -72,80 +68,24 @@ Ensure you have the following installed on your system:
      yarn dev
      ```
 
-   This command will start a local development server. the application will be availabe at `http://localhost:9003/`.
+   This command will start a local development server. The application will be available at `http://localhost:9003/`.
 
 ---
 
-## Build for Production
+## Features
 
-To create an optimized production build of the application, run:
+### Insights
 
-- Using npm:
-  ```bash
-  npm run build
-  ```
-- OR using Yarn:
-  ```bash
-  yarn build
-  ```
+The **Insights** section provides an overview of the overall data trends for items processed by the workstations under a specific manager. It includes key metrics and visualizations to help managers understand processing patterns and performance.
 
-This will generate a `dist` directory containing the production-ready files.
+### Expired Items
 
----
+The **Expired Items** section provides a detailed overview of items reported as expired. It includes the following details:
 
-## Preview Production Build
+- Batch ID of the expired items.
+- Device ID used during processing.
+- Inferenced images collected during the processing of the particular batch for review and analysis.
 
-To preview the production build locally:
-
-- Using npm:
-  ```bash
-  npm run preview
-  ```
-- OR using Yarn:
-  ```bash
-  yarn preview
-  ```
-
----
-
-## Additional Scripts
-
-Here are some additional scripts you can run:
-
-- **Lint the Code:**
-  ```bash
-  npm run lint
-  ```
-  OR
-  ```bash
-  yarn lint
-  ```
-
----
-
-## Troubleshooting
-
-If you encounter issues during installation or setup, consider the following steps:
-
-1. Ensure you have the latest version of Node.js and npm/yarn installed.
-2. Delete the `node_modules` folder and reinstall dependencies:
-   ```bash
-   rm -rf node_modules
-   npm install
-   ```
-   OR
-   ```bash
-   rm -rf node_modules
-   yarn install
-   ```
-3. Clear npm/yarn cache:
-   - For npm:
-     ```bash
-     npm cache clean --force
-     ```
-   - For Yarn:
-     ```bash
-     yarn cache clean
-     ```
+This feature allows managers to review expired items and take necessary actions based on the collected data.
 
 ---
