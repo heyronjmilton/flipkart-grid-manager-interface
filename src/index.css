@@ -6,8 +6,8 @@
 .shimmer {
     background: linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.1) 25%,
-      rgba(255, 255, 255, 0.2) 50%,
+      rgba(233, 227, 227, 0.1) 25%,
+      rgba(218, 212, 212, 0.2) 50%,
       rgba(255, 255, 255, 0.1) 75%
     );
     background-size: 200% 100%;
